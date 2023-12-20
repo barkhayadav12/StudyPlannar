@@ -1,0 +1,175 @@
+*{
+    box-sizing: content-box;
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image: url('img1modified.jpg');
+    background-color: white;
+    color: white;
+}
+h2{
+    height: 40px;
+    display:inline-block;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index:100;
+}
+.btnNote
+{
+    height: 30px;
+    width:80px;
+    background-color:green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+
+}
+.title{
+    color: black;
+    margin-top: 20px;  
+    width: 110px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: salmon;
+    padding: 2px;
+    border-radius: 3px;
+    text-align: center;
+}
+p{
+    color:black;
+}
+.input
+{
+    height: 330px;
+    border: 1px solid black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::placeholder{
+    color: black;
+    padding: 7px;
+
+}
+textarea:focus{
+    border: 1px solid black;
+    outline: none;
+
+}
+.btn{
+    width:30%;
+    height: 30px;
+}
+i{
+    color:white;
+    font-size: 2rem;
+}
+.writebtn
+{
+    position: fixed;
+    bottom: 20px;
+    right:10px;
+    padding:10px;
+    color:black;
+    background-color:black;
+    border: none;
+    border-radius:50%;
+    height:50px;
+    width:50px;
+}
+.content{ 
+    display: flex;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 65%;
+    width: 90%;
+    
+}
+.notes{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    height: 100px;
+    width: 150px;
+    background-color:rgba(255, 255, 0, 0.475);
+    border-radius: 10px;
+    font-family:sans-serif;
+}
+
+.OptionsBox
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 270px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 5px;
+
+}
+.optionbtn
+{
+    background-color: aqua;
+    margin: 10px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 5px solid black;
+
+}
+.content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 65%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+}
+@media screen and (max-width:576px) {
+    .content{
+        grid-template-columns: repeat(2,2fr);
+    }
+}
+@media screen and (max-width:420px) {
+    .content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .btnNote{
+        width: 60px;
+    }
+    .input{
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+    }
+    .title{
+        margin-left: -4px;
+        height: 20px;
+    }
+    h2{
+        font-size: large;
+    }
+    .notes{
+        height: 100px;
+        width:200px;
+        margin-left: 35px;
+    }
+}
+
+
+

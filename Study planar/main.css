@@ -1,0 +1,29 @@
+body{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: maroon;
+    /* background-color: black; */
+   
+}
+.link{
+    margin-top: 10px;
+}
+.link button{
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: maroon;
+    border-radius: 5px;
+
+}
+.note{
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: maroon;
+    border-radius: 5px;
+    width: 150px;
+}
